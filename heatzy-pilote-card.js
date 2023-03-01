@@ -16,18 +16,18 @@ const translation = {
   },
   fr: {
     modes: {
-      "none": "Off",
+      "none": "Arrêt",
       "away": "Hors-gel",
       "eco": "Eco",
-      "comfort": "Confort"
+      "comfort": "Chauffe"
     }
   }
 };
 
 
 const MODES = [ // https://cdn.materialdesignicons.com/7.1.96/
-    {name:"none", icon:"mdi:minus-circle", style:"heat_selected_none"}, 
-    {name:"comfort", icon:"mdi:white-balance-sunny", style:"heat_selected_comfort"},
+    {name:"none", icon:"mdi:power", style:"heat_selected_none"}, 
+    {name:"comfort", icon:"mdi:fire", style:"heat_selected_comfort"},
     {name:"eco", icon:"mdi:weather-night", style:"heat_selected_eco"}, 
     {name:"away", icon:"mdi:snowflake", style:"heat_selected_away"}
 ];
@@ -226,7 +226,7 @@ class HeatzyPiloteCard extends LitElement {
             color: red !important;
         }
         .heat_icon{
-            color: grey;
+            color: #454545;
             cursor: pointer;
             margin-left: 10px;
         }
